@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e9edc9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#panel {
+    width: 80%;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30%;
+    height: 90px;
+    background-color: #d4a373;
+}
+#hit, #timer, #score { 
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: #e9edc9;
+}
+#gameArea {
+    width: 100%;
+    height: calc(100% - 90px);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#hit div:nth-of-type(2) {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: black;
+}
+#timer div:nth-of-type(2) {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: black;
+}
+#score div:nth-of-type(2) {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: black;
+}
+#bubble {
+    width: 60px;
+    height: 60px;
+    background-color: #d4a373;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#bubble:hover {
+    background-color: #d78f48;
+}
+
+#gameArea h1 {
+    display: inline;
+}
